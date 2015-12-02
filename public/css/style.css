@@ -1,0 +1,29 @@
+#home{
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	color: white;
+}
+.up{
+	padding-top: 102px;
+}
+.zero{
+	opacity: 0;
+}
+.center{
+	text-align: center;
+}
+.shade{
+	background-color: rgba(0,0,0,0.5);
+}
+.down{
+	padding-bottom: 20px;
+}
+.foot{
+	background-color: black;
+	color: white;
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:70px;
+   width:100%;
+}

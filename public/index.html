@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-App="AuthApp">
+<head>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Login</title>
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 <!-- Compiled and minified CSS -->
+	   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">
+	 $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });  
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body ng-controller="Main" id="home">
+<div class="row up">
+<div class="col s12 m3 zero">.</div>	
+<div class="col s12 m5 shade">
+<h2 class="center">Login<img src="img/logo.png" style="float:right;" height="60" width="60"></h2>
+<form  name="loginuser" class="down" action="login" ng-submit="loginUser">
+		<i class="material-icons">perm_identity</i> Username:<input type="text" id="username" name="username" ng-model="user.username" /><br />
+		<i class="material-icons">vpn_key</i> Password:<input id="password" type="password" class="validate" name="password"  ng-model="user.password">
+       <button class="btn red waves-effect waves-yellow" type="submit"onclick="$('.loading').show()" name="action">Login
+    <i class="material-icons right">send</i>
+  </button>
+<div class="progress loading yellow" style="display:none;" ><div style="display:none;" class="indeterminate loading red"></div></div>
+</form>
+</div>
+</div>
+
+<!-- Privacy Policy -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- terms of use -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- support -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+<footer class="foot">
+	<div class="row">
+		<div class="col s12 m1 zero">.</div>
+		<div class="col s12 m6"><img src="img/logo.png" height="70" width="70"></div>
+		<div class="col s12 m4">
+		<a class="modal-trigger" href="#modal1">Privacy Policy</a> |
+		<a class="modal-trigger" href="#modal2">Terms of use</a> |
+		<a class="modal-trigger" href="#modal3">Support</a>
+		</div>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>          
+</body>
+</html>
